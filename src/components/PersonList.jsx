@@ -20,7 +20,7 @@ const PersonList = () => {
       <ul>
         {persons.map((person) => (
             <>
-          <li>{person.name}{' - '}{person.username}</li>
+          <li key={person.id}>{person.name}{' - '}{person.username}</li>
        
           </>
         ))}
